@@ -102,10 +102,8 @@ body{
     opacity: 40%;
   }
   
-  /*
-  @media (max-width: 600px)
+  @media (min-width: 320px) and (max-width: 1200px)
   {
-  
     .logo img
     {
       width: 1.7rem;
@@ -158,7 +156,6 @@ body{
     }
   }
 
-  */
 .logo img{
     width: 30%;
     margin-top: 5px;
@@ -179,50 +176,6 @@ body{
     justify-items: center;
 }
 
-
-/*
-@media screen and (max-width: 500px)
-{
-    .container-post{
-        width: 80%;
-        display: inline-grid;
-        align-items: center;
-        margin-left: 25%;
-        }
-
-  .text-post- .horizontal-icon
-  {
-    justify-items: left;
-    
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .about-me, .aprendizado
-  {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  
-  .post
-  {
-    width: 80%;
-    display: inline-block;
-  }
-
-  .horizontal-icon a img
-  {
-    width: 70%!important; 
-  }
-
-   .horizontal-icon{
-    margin-top: 20px;
-    display: flex; 
-  }
-
-}
-
-*/
 
 .about-me, .projetos, .projetos-conteudo{
     width: 100%;
@@ -286,7 +239,7 @@ body{
 }
 
 .text-post p{
-    font-size: 17px;
+    font-size: 14px;
 }
 
 .more{
@@ -447,117 +400,6 @@ body{
 .videoDio-content{
     width: 884px;
 }
-
-
-/*
-@media (max-width: 575.98px) { 
-
-    .text-post h3{
-        margin-top: 0;
-    }
-
-    .quem-sou{
-        margin-left: -28px;
-    }
-    
-    .responsive-foto-post{
-        margin-top: 30px;
-
-    }
-    .more{
-        margin-top: 260px;
-        font-size: 11px;
-        margin-left: 1px;
-        text-align: center;
-    }
-
-    .about-me{
-        height: 350px;
-    }
-
-    .eu{
-        width: 93%;
-        height: 76%;
-        margin-left: -7px;
-        margin-top: -18px;
-    }
-
-    .cert{
-        margin-left: -51px;
-    }
-
-    .cab{
-        margin-left: -39px;
-    }
-    .text-post p{
-        font-size: 15px;
-    }
-
-    .horizontal-icon{
-        margin-top: 285px;
-        margin-left: 39px;
-    }
-
-    .text-post li {
-        padding: 3px;
-        font-size: 11px;
-        font-family: "Comic Sans MS", "Comic Sans", cursive;
-        cursor: pointer;
-    }
-
-    .certificado p{
-        margin-left: -14px;
-    }
-
-    .close-button {
-        left: 82%;
-        top: 34%;
-    }
-
-    video, .videoEtec-content{
-        width: 100%;
-    }
- }
-
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    .text-post h3{
-        margin-top: 0;
-    }
-    
-    .more{
-        margin-top: 255px;
-        font-size: 14px;
-        margin-left: 1px;
-        text-align: center;
-    }
-
-    .about-me{
-        height: 350px;
-    }
-
-    .eu{
-        width: 93%;
-        height: 76%;
-        margin-left: -7px;
-        margin-top: -18px;
-    }
-
-    .horizontal-icon{
-        margin-top: 285px;
-        margin-left: 39px;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
-
-
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
-
-
-@media (min-width: 1200px) { ... }
-
-*/
 
 /* Responsive*/
 
@@ -745,7 +587,7 @@ body{
     }
 }
 
-@media (min-width: 320px) and (max-width: 529px){
+@media (min-width: 320px) and (max-width: 549px){
     .container-post{
         display: inline-block;
         margin-top: 20px;
@@ -762,18 +604,16 @@ body{
         margin-top: 82px;
     }
 
-
-    /* AINDA FALTA */
     .more{
-        margin-top: 153px;
+        margin-top: 224px;
         width: 160px;
         /* display: inline; */
-        margin-left: 93px;
+        margin-left: 48px;
 
     }
     .horizontal-icon{
-        margin-left: 106px;
-        margin-top: 301px;
+        margin-left: 70px;
+        margin-top: 385px;
         width: 113px;
         display: inline-block;
     }
@@ -787,7 +627,76 @@ body{
     }
 
     .responsive-projetcs-title{
-        font-size: 20px;
+        font-size: 19px;
 
+    }
+
+    .responive-photo-aprendendo{
+        margin-left: -12px;
+
+    }
+
+    .reposinve-img-certificacoes{
+        margin-left: -12px;
+    }
+}
+
+@media (max-width: 320px){
+    .container-post{
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 25%;
+    }
+
+    .quem-sou{
+        margin-top: 0px;
+        margin-left: -24px;
+    }
+
+    
+    #foto-post{
+        height: 65px;
+        margin-top: 60px;
+        width: 54px;
+        margin-left: 35px;
+    }
+
+    .eu{
+        margin-left: -52px;
+        margin-top: 95px;
+
+    }
+
+    .more{
+        margin-top: 275px;
+        margin-left: 4px;
+        font-size: 14px;
+    }
+    
+    .horizontal-icon{
+        margin-left: 15px;
+        margin-top: 415px;
+        width: 113px;
+        display: inline-block;
+    }
+
+    .responsive-aprendendo-title{
+        margin-top: 0px;
+    }
+
+    .text-post h3{
+        font-size: 20px;
+    }
+
+    .responsive-text-aprendendo{
+        margin-left: -10px;
+
+    }
+
+    .text-post li{
+        font-size: 14px;
+        margin-left: -47px;
+        padding: 0px;
     }
 }
