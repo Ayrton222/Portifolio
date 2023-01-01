@@ -102,6 +102,7 @@ body{
     opacity: 40%;
   }
   
+  /*
   @media (max-width: 600px)
   {
   
@@ -111,6 +112,7 @@ body{
       margin: .5rem;
       margin-left: 1.25rem;
       margin-right: 12em;
+      height: 76px;
     }
   
     .navbar
@@ -155,6 +157,8 @@ body{
       display: flex;
     }
   }
+
+  */
 .logo img{
     width: 30%;
     margin-top: 5px;
@@ -175,6 +179,8 @@ body{
     justify-items: center;
 }
 
+
+/*
 @media screen and (max-width: 500px)
 {
     .container-post{
@@ -187,9 +193,9 @@ body{
   .text-post- .horizontal-icon
   {
     justify-items: left;
-    /*
+    
     flex-direction: column;
-    flex-wrap: wrap;*/
+    flex-wrap: wrap;
   }
 
   .about-me, .aprendizado
@@ -215,6 +221,8 @@ body{
   }
 
 }
+
+*/
 
 .about-me, .projetos, .projetos-conteudo{
     width: 100%;
@@ -441,6 +449,7 @@ body{
 }
 
 
+/*
 @media (max-width: 575.98px) { 
 
     .text-post h3{
@@ -539,7 +548,7 @@ body{
     }
 }
 
-/*
+
 @media (min-width: 768px) and (max-width: 991.98px) { ... }
 
 
@@ -547,3 +556,238 @@ body{
 
 
 @media (min-width: 1200px) { ... }
+
+*/
+
+/* Responsive*/
+
+@media (min-width: 1000px) and (max-width: 1200px){
+    .horizontal-icon{
+        margin-left: 28px;
+        margin-top: 80px;
+    }
+
+    #foto-post{
+        height: 157px;
+        margin-top: 78px;
+    }
+
+    .more{
+        margin-top: 18px;
+    }
+
+    .responsive-hobbi{
+        margin-top: 28px;
+        margin-left: -110px;
+    }
+
+    .reposinve-img-certificacoes{
+        margin-top: 215px;
+    }
+
+}
+
+    @media (min-width: 1000px) and (max-width: 1155px){
+        .horizontal-icon{
+            margin-left: 10px;
+            margin-top: 80px;
+        }
+    
+        .more{
+            margin-top: 18px;
+            margin-left: 18px;
+    }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1090px){
+    .horizontal-icon{
+        margin-left: 109px;
+        margin-top: 202px;
+        display: inline-block;
+        width: 113px;
+    }
+
+    .more{
+        margin-top: 47px;
+        margin-left: 3px;
+}
+}
+
+@media (min-width: 830px) and (max-width: 999px){
+    #foto-post{
+        height: 96px;
+        margin-top: 91px;
+    }
+    .horizontal-icon{
+        margin-left: 70px;
+        margin-top: 351px;
+        display: inline-block;
+        width: 113px;
+    }
+
+    .more{
+        display: inline;
+        margin-top: 168px;
+        margin-left: 85px;
+        width: 107px;
+}
+}
+
+@media (min-width: 750px) and (max-width: 829px){
+
+    .container-post{
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 25%;
+    }
+
+    .about-me{
+        height: 450px;
+    }
+
+    #foto-post{
+        height: 150px;
+        margin-top: 82px;
+    }
+
+    .more{
+        margin-top: 102px;
+        width: 160px;
+        display: inline;
+        margin-left: 130px;
+    }
+
+    .horizontal-icon{
+        margin-left: 125px;
+        margin-top: 260px;
+        width: 113px;
+        display: inline-block;
+    }
+}
+
+@media(min-width: 630px) and (max-width: 749px){
+    
+    .container-post{
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 25%;
+    }
+
+    .about-me{
+        height: 550px;
+    }
+
+    #foto-post{
+        height: 150px;
+        margin-top: 82px;
+    }
+
+    .more{
+        margin-top: 153px;
+        width: 160px;
+        /* display: inline; */
+        margin-left: 93px;
+
+    }
+    .horizontal-icon{
+        margin-left: 106px;
+        margin-top: 301px;
+        width: 113px;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 629px){
+    .container-post{
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 25%;
+    }
+
+    .about-me{
+        height: 550px;
+    }
+
+    #foto-post{
+        height: 150px;
+        margin-top: 82px;
+    }
+
+    .more{
+        margin-top: 153px;
+        width: 160px;
+        /* display: inline; */
+        margin-left: 93px;
+
+    }
+    .horizontal-icon{
+        margin-left: 106px;
+        margin-top: 301px;
+        width: 113px;
+        display: inline-block;
+    }
+
+    .responsive-aprendendo-title, .cert{
+        margin-left: -40px;
+    }
+
+    .responsive-hobbi{
+        margin-left: -36px;
+    }
+
+    .responsive-projetcs-title{
+        font-size: 20px;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 529px){
+    .container-post{
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 25%;
+    }
+
+    .about-me{
+        height: 550px;
+    }
+
+    #foto-post{
+        height: 100px;
+        margin-top: 82px;
+    }
+
+
+    /* AINDA FALTA */
+    .more{
+        margin-top: 153px;
+        width: 160px;
+        /* display: inline; */
+        margin-left: 93px;
+
+    }
+    .horizontal-icon{
+        margin-left: 106px;
+        margin-top: 301px;
+        width: 113px;
+        display: inline-block;
+    }
+
+    .responsive-aprendendo-title, .cert{
+        margin-left: -40px;
+    }
+
+    .responsive-hobbi{
+        margin-left: -36px;
+    }
+
+    .responsive-projetcs-title{
+        font-size: 20px;
+
+    }
+}
