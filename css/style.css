@@ -439,9 +439,69 @@ body{
     width: 884px;
 }
 
-@media screen and (max-width: 500px){
-    
 
+@media (max-width: 575.98px) { 
+
+    .text-post h3{
+        margin-top: 0;
+    }
+    
+    .more{
+        margin-top: 260px;
+        font-size: 11px;
+        margin-left: 1px;
+        text-align: center;
+    }
+
+    .about-me{
+        height: 350px;
+    }
+
+    .eu{
+        width: 93%;
+        height: 76%;
+        margin-left: -7px;
+        margin-top: -18px;
+    }
+
+    .cert{
+        margin-left: -51px;
+    }
+
+    .cab{
+        margin-left: -39px;
+    }
+    .text-post p{
+        font-size: 15px;
+    }
+
+    .horizontal-icon{
+        margin-top: 285px;
+        margin-left: 39px;
+    }
+
+    .text-post li {
+        padding: 3px;
+        font-size: 13px;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        cursor: pointer;
+    }
+
+    .certificado p{
+        margin-left: -14px;
+    }
+
+    .close-button {
+        left: 82%;
+        top: 34%;
+    }
+
+    video, .videoEtec-content{
+        width: 100%;
+    }
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
     .text-post h3{
         margin-top: 0;
     }
@@ -459,6 +519,9 @@ body{
 
     .eu{
         width: 93%;
+        height: 76%;
+        margin-left: -7px;
+        margin-top: -18px;
     }
 
     .horizontal-icon{
@@ -466,3 +529,12 @@ body{
         margin-left: 39px;
     }
 }
+
+/*
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+
+@media (min-width: 1200px) { ... }
