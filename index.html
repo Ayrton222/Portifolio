@@ -16,93 +16,92 @@
     <script src="js/script.js" defer></script>
     <script src="js/particles.min.js" defer></script>
     <script src="js/bg.js" defer></script>
+    <script src="js/popup.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <div id="particles-js"></div>
 
-    <div id="particles-js">
+    <nav class="barra-menu">
+            <a href="index.html"><img src="imagens/icon.png" id="foto-logo"></a>
+                <div class="barra-nevacao">
+                    <a href="" class="nav-link">home</a>
+                    <a href="" class="nav-link">Experiências Profissionais</a>
+                    <a href="" class="nav-link">Portifolio</a>
+                 </div>
 
-    </div>
-    <nav class="navbar">
+                 <!-- Navbar Mobiel -->
 
-        <div class="logo">
-            <a href="index.html">
-                <img src="imagens/icon.png" alt="logo">
-            </a>
-        </div>
-    
-        <div class="navbar-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">Experiências Profissionais</a></li>
-                <li><a href="">Portifólio</a></li>
-            </ul>
-        </div>
-
-        <a href="#" class="botaomenu" alt="barra de navegação compactada">
-
-            <span class="bar" id="bar1"></span>
-            <span class="bar" id="bar2"></span>
-            <span class="bar" id="bar3"></span>
-  
-          </a>
+                 <a href="#" class="botaomenu" alt="barra de navegação compactada">
+                    <span class="bar" id="bar1"></span>
+                    <span class="bar" id="bar2"></span>
+                    <span class="bar" id="bar3"></span>
+                </a>
     </nav>
-    
-    <!-- About me -->
-    <div class="container-post">
-        <div class="post">
-            <div class="about-me">
-                <div class="foto-post responsive-foto-post">
-                    <img src="imagens/logo.jpeg" alt="" id="foto-post">
-                </div>
-                <div class="text-post">
-                    <h3 class="quem-sou">Quem sou</h3>
-                    <p class="eu">Meu nome é Ayrton Senna Cabani Bastos, tenho 19 años e sou Técnico em Desenvolvimento de Sistemas. 
-                        Faço faculdade de Desenvolvimento de Software Multiplataforma, and I really like web development. </p>
-                </div>
-                <p class="more"><strong>Você também pode me conhecer melhor aqui</strong></p>
-                <div class="horizontal-icon" id="about-me">
-                    <a href="https://www.linkedin.com/in/ayrton-senna-cabani-bastos-520375231/" target = "_blank">
-                        <img src = "https://img.shields.io/badge/-Linkedin-black?style=for-the-badge&logo=linkedin&logoColor=white">
-                    </a>
-                    <a href="https://github.com/Ayrton222">
-                        <img src = "https://img.shields.io/badge/-Github-black?style=for-the-badge&logo=github&logoColor=white">
-                    </a>
-                    <a href="https://www.instagram.com/ayrton_cabani/">
-                        <img src = "https://img.shields.io/badge/-Instagram-black?style=for-the-badge&logo=instagram&logoColor=white">
-                    </a>
+        <center>
+            <div class="conteudo">
+                <div class="post">
+                    <div class="about-me">
+                        <div class="foto">
+                            <img src="imagens/logo.jpeg" id="about-me-foto">
+                        </div>
+                            <div class="text-post-space">
+                                <h3>Quem sou</h3>
+                                <p>Meu nome é Ayrton Senna Cabani Bastos, tenho 19 años e sou Técnico em Desenvolvimento de Sistemas. 
+                                    Faço faculdade de Desenvolvimento de Software Multiplataforma, and I really like web development.
+                                </p>
+                                <br>
+                                    <p class="more">
+                                        Você também pode me conhecer melhor aqui
+                                    </p>
+                                        <br>
+                                        <div class="horizontal-icons" id="about-me">
+                                            <a href="https://www.linkedin.com/in/ayrton-senna-cabani-bastos-520375231/" target = "_blank">
+                                                <img src = "https://img.shields.io/badge/-Linkedin-black?style=for-the-badge&logo=linkedin&logoColor=white">
+                                            </a>
+                                            <a href="https://github.com/Ayrton222">
+                                                <img src = "https://img.shields.io/badge/-Github-black?style=for-the-badge&logo=github&logoColor=white">
+                                            </a>
+                                            <a href="https://www.instagram.com/ayrton_cabani/">
+                                                <img src = "https://img.shields.io/badge/-Instagram-black?style=for-the-badge&logo=instagram&logoColor=white">
+                                            </a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+
+
+            <div class="post">
+                <div class="aprendizado">
+                    <div class="foto-post-space">
+                        <p class="foto-post">&#128187; &#127760;</p>
+                    </div>
+                    <div class="text-post-space">
+                        <h3>O que ando aprendendo</h3>
+                        <p>Atualmente estou me dedicando a aprender algumas tecnologias referentes a 
+                        Programação Web. Além disso, por gostar bastante de FrontEnd em geral eu 
+                        também estou fazendo Curso de Desing Grafico.
+                        </p>
+                        <br>
+                        <p class="more-hobbie">
+                        Fora do ambiente profissional meu novo hobbie é aprender Desing Grafico
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <!-- Aprendizado -->
-        <div class="post">
-            <div class="aprendizado">
-                <div class="foto-post">
-                    <p style="font-size: 45px; text-align: center;" class="responive-photo-aprendendo"> &#128187; &#127760;</p>
-                </div>
-                <div class="text-post">
-                    <h3 class="responsive-aprendendo-title">O que ando aprendendo</h3>
-                    <p class="responsive-text-aprendendo">Atualmente estou me dedicando a aprender algumas tecnologias referentes a Programação Web. 
-                        Além disso, por gostar bastante de FrontEnd em geral eu também estou fazendo Curso de Desing Grafico.<br></p>
-                    <p style="font-size: 16px; color: black; text-align: center;" class="responsive-hobbi">Fora do ambiente profissional meu novo hobbie é aprender Desing Grafico</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Certificações -->
-
-        <div class="post">
-            <div class="certificado">
-                <div class="foto-post">
-                    <p style="font-size: 45px; text-align: center;" class="reposinve-img-certificacoes">&#127760;</p>
-                </div>
-                <div class="text-post">
-                    <h3 class="cert">Minhas certificações</h3>
-                    <p>
+            <div class="post">
+                <div class="certificacoes">
+                    <div class="foto-post-space">
+                        <p class="foto-post"> &#128187; &#127760; </p>
+                    </div>
+                    <div class="text-post-space">
+                        <h3 class="cert">Minhas certificações</h3>
+                        <p>
                         <li onclick="showModal()">
                             Inglês
                         </li>
@@ -124,60 +123,14 @@
                         <li onclick="showFatec()">
                             Desenvolvimento de Software Multiplataforma
                         </li>
-                    </p>
-                   
-                </div>
-            </div>
-        </div>
-    </div>
-
-         <!-- Projetos -->
-
-         <div class="projetos">
-             <div class="projeto">
-                 <h3 class="responsive-projetcs-title">Alguns dos meus projetos</h3>
-             </div>
-         </div>
-
-         <div class="projetos-conteudo" onclick="showVideoEtec()">
-            <div class="foto-post">
-               <img src="imagens/cabeleireiro34.png" alt="" id="foto-projeto">
-           </div>
-
-            <div class="text-post text-etec">
-                   <h3 class="cab">Cabeleireiro soluções</h3>
-                   <p><strong>Descrição: </strong> Criado um site para Cabeleireiro(as), no qual o cliente poderia consultar Cabeleireiro(as)
-                perto de sua região, os mais avaliados, poderia ja agendar o que desejaria realizar. E o(a) Cabeleireiro(a) poderia visualizar e ter controle de sua agenda, pagamentos, clientes</p>
-                   <legend>Etec Irma Agostina</legend>
+                        </p>
+                    </div>
+                </div> 
             </div>
         </div>
 
-        <div class="projetos-conteudo" onclick="showVideoDio()">
-            <div class="foto-post">
-               <img src="imagens/Netflix.png" alt="" id="foto-projeto">
-           </div>
-
-            <div class="text-post text-dio">
-                   <h3>Clone Netflix</h3>
-                   <p><strong>Descrição: </strong> Criado um site (clone) da pagina inicial da  NetFlix</p>
-                   <legend>DIO - Digital Innovation One</legend>
-            </div>
-        </div>
-
-        <div class="projetos-conteudo" onclick="showVideoUdemy()">
-            <div class="foto-post">
-               <img src="imagens/udemy.png" alt="" id="foto-projeto">
-           </div>
-
-            <div class="text-post text-dio">
-                   <h3>Jogo Mata Mosquito</h3>
-                   <p><strong>Descrição: </strong> Criado um jogo Mata Mosquito, aonde o usuario pode escolher 3 niveis
-                cada nivel tem a sua dificuldade (Normal, Dificl, Chuck Norris), e em cada dificuldade o tempo é mais rapido.</p>
-                   <legend>Udemy</legend>
-            </div>
-        </div>
-        
-    <!-- Certificações Pop Up -->
+</center>
+    <!-- POP UPS -->
 
     <div class="modal" id="modal">
         <div class="modal-content">
@@ -211,7 +164,7 @@
         </div>
     </div>
 
-    
+
     <div class="dio" id="dio">
         <div class="dio-content">
             <span class="close-button" onclick="closeDio()">&times;</span>
@@ -236,31 +189,5 @@
         </div>
     </div>
 
-    <!-- Projetos Pop Up-->
-    
-    <div class="videoEtec" id="videoEtec">
-        <div class="videoEtec-content">
-            <span class="close-button video" onclick="closeVideoEtec()">&times;</span>
-            <h3>Um pouquinho desse projeto incrível</h3>
-            <video src="video/2021-12-05-15-06-54_z7wwR7Sk.mp4" controls></video>
-        </div>
-    </div>
-
-    <div class="videoDio" id="videoDio">
-        <div class="videoDio-content">
-            <span class="close-button video" onclick="closeVideoDio()">&times;</span>
-            <h3>Um pouquinho desse projeto incrível</h3>
-            <img src="imagens/netflix-clone.png" alt="Netflix Clone" class="fotoDio">
-        </div>
-    </div>
-
-    <div class="videoUdemy" id="videoUdemy">
-        <div class="videoUdemy-content">
-            <span class="close-button video" onclick="closeVideoUdemy()">&times;</span>
-            <h3>Um pouquinho desse projeto incrível</h3>
-            <video src="video/2022-12-31-09-03-27_UMYnwEaQ.mp4" controls></video>
-        </div>
-    </div>
-    <script src="./js/popup.js"></script>
 </body>
 </html>

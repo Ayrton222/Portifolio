@@ -1,17 +1,13 @@
 *{
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-
-/*BODY*/
 
 body{
-    margin: 0px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 12px;
     background-color: black;
-    min-width: 300px;
 }
+
+
 
 #particles-js 
 {
@@ -21,52 +17,49 @@ body{
     z-index: -1;
 }
 
-/* NavBar Desktop*/
-
-.navbar{
+.barra-menu{
+    min-height: 70px;
     display: flex;
-    justify-content: space-around;
-    position: center;
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    border: 2px wheat solid ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+    background-color: white;
 }
 
-.navbar-links{
-    height: 100%;
-    margin-bottom: 0rem;
-    width: 55%;
+#foto-logo{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
 }
 
-.navbar-links ul{
-    margin: 0;
-    padding: 0;
+.barra-nevacao{
     display: flex;
+    gap: 60px;
 }
 
-.navbar-links li{
-    list-style-type: none;
-}
-
-.navbar-links li a{
+.barra-nevacao a{
     text-decoration: none;
     color: black;
-    padding: 2.06rem;
-    display: block;
-    font-size: 1.3em;
-    font-family:  "Comic Sans MS", "Comic Sans", cursive;
-    text-transform: uppercase;
 }
 
-.navbar-links li:hover{
-    background-color: rgb(162, 244, 255);
-    color:  white;
-    border-left: 1px black solid;
-    border-right: 1px black solid;
-    text-shadow:0px 0px 5px rgba(255, 255, 255, 0.281);
+.barra-nevacao a:visited{
+    color: black;
 }
+
+.nav-link{
+    font-size: 18px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.nav-link:hover{
+    background-color: aqua;
+    padding: 15px;
+    border: 1px solid black;
+}
+
 
 /* NavBar Mobile */
+
 
 .botaomenu{
     position: absolute;
@@ -101,182 +94,156 @@ body{
   {
     opacity: 40%;
   }
-  
-  @media (min-width: 320px) and (max-width: 1200px)
+
+  @media (max-width: 600px)
+{
+
+  .logo img
   {
-    .logo img
-    {
-      width: 1.7rem;
-      margin: .5rem;
-      margin-left: 1.25rem;
-      margin-right: 12em;
-      height: 76px;
-    }
-  
-    .navbar
-    {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 105%;
-    }
-  
-    .botaomenu
-    {
-      display: flex;
-    }
-  
-    .navbar-links 
-    {
-        display: none;
-        width: 100%;
-    }
-  
-    .navbar-links ul
-    {
-      width: 100%;
-      flex-direction: column;
-      background-color: rgba(255, 255, 255, 0.048);
-    }
-  
-    .navbar-links ul li
-    {
-      text-align: center;
-      border-top: 1px rgba(255, 255, 255, 0.425) outset;
-      border-bottom: 1px rgba(255, 255, 255, 0.418) outset;
-    }
-  
-    .navbar-links ul li a
-    {
-      padding: .5rem 1rem;
-    }
-  
-    .navbar-links.active
-    {
-      display: flex;
-    }
+    width: 1.7rem;
+    margin: .5rem;
+    /*margin-left: 1.25rem;
+    margin-right: 12em;*/
   }
 
-.logo img{
-    width: 30%;
-    margin-top: 5px;
-}
+  .barra-menu
+  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.container-post{
-    margin-top: 20px;
-    width: 100%;
+  .botaomenu
+  {
     display: flex;
-    justify-content: center;
+  }
+
+  .barra-nevacao 
+  {
+      display: none;
+      width: 100%;
+  }
+
+  .barra-nevacao ul
+  {
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.048);
+  }
+
+  .barra-nevacao ul li
+  {
+    text-align: center;
+    border-top: 1px rgba(255, 255, 255, 0.425) outset;
+    border-bottom: 1px rgba(255, 255, 255, 0.418) outset;
+  }
+
+  .barra-nevacao ul li a
+  {
+    padding: .5rem 1rem;
+  }
+
+  .barra-nevacao.active
+  {
+    display: flex;
+  }
 }
 
-.post{
+/* FIM */
+
+/* CONTEUDO */
+
+.conteudo{
+    margin-top: 15px;
+    width: 100%;
+    display: inline-block;
+}
+
+.post, .projeto-conteudo{
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-items: center;
 }
-
-
-.about-me, .projetos, .projetos-conteudo{
+.about-me, .aprendizado, .certificacoes, .projeto, .projeto-conteudo{
+    background-color: white;
+    align-items: center;
     width: 100%;
     height: 100%;
-    background-color: white;
-    border-radius: 15px;
     border: 2px solid black;
-    padding: 10px;
+    border-radius: 15px;
     display: flex;
-    align-items: center;
 }
 
-.aprendizado{
-    width: 90%;
-    height: 100%;
-    background-color: white;
-    border-radius: 15px;
-    border: 2px solid black;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.certificado{
-    width: 90%;
-    height: 100%;
-    background-color: white;
-    border-radius: 15px;
-    border: 2px solid black;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.foto-post{
-    margin: 5px;
-    margin-right: 10px;
+.foto{
     width: 30%;
     height: 100%;
     display: flex;
-    background-color: white;
+    margin:  5px;
+    margin-right: 10px;
 }
 
-#foto-post{
-    margin-top: 50%;
-    width: 100%;
-    height: 50%;
+#about-me-foto{
+    width: 100px;
+    height: 100px;
+    border-radius: 7px;
     border: 2px dashed black;
-    border-radius: 10px;
-
+    margin-top: 21px;
 }
 
-.text-post{
-    margin: 10px;
-    width: 70%;
-    height: 100%;
-}
-
-.text-post h3{
+.text-post-space h3{
     font-size: 26px;
 }
 
-.text-post p{
-    font-size: 14px;
+.text-post-space p{
+    font-size: 17px;
 }
 
-.more{
-    display: flex;
-    margin-top: 180px;
-    position: absolute;
-    margin-left: 4%;
-    font-size: 16px;
-
-}
-
-.horizontal-icon{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 235px;
-    position: absolute;
-    margin-left: 4%;
-}
-
-.horizontal-icon a img{
-    border-radius: 20px;
-    border: 1px solid wheat;
-    width: 100%;
-}
-
-
-/*Certificacao*/
-
-.text-post li{
+.text-post-space li{
     padding: 3px;
     font-size: 17px;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     cursor: pointer;
 }
+.horizontal-icons{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.horizontal-icons a img{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.foto-post-space{
+    margin: 5px;
+    margin-right: 10px;
+    width: 30%;
+    height: 100%;
+    display: flex;
+
+}
+
+.foto-post{
+    font-size: 50px; 
+    text-align: center;
+}
+
+.more-hobbie{
+    font-size: 15px;
+    color: black;
+}
+
+.projeto-conteudo:hover{
+    transform:scale(1.25,1.25);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ }
 
 
 /* POP UP */
+
 
 .modal,.etec, .eurofarma, .senai, .dio, .udemy, .fatec, .videoEtec, .videoDio, .videoUdemy{
     background: rgba(0, 0, 0, 0.4);
@@ -344,42 +311,8 @@ body{
  }
 
 
- /* Projetos  */
+ /* VIDEOS */ 
 
- .projetos, .projetos-conteudo{
-     width: 50%;
-     height: 50%;
-     margin-left: 25%;
-     margin-top: 25px;
-     display: flex;
-     justify-content: space-around;
- }
- .projeto{
-     color: black;
-     font-family: "Comic Sans MS", "Comic Sans", cursive;
-     font-size: 20px;
-     margin: 0px;
-     padding: 0px;
- }
-
- .projetos-conteudo:hover{
-    transform:scale(1.25,1.25);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
- }
-
-.projetos-conteudo{
-    cursor: pointer;
-}
-
- #foto-projeto{
-    margin-top: 25%;
-    width: 100%;
-    height: 50%;
-
- }
-
-
- /* videos */ 
 .videoEtec-content, .videoUdemy-content{
     width: 884px;
 }
@@ -401,7 +334,81 @@ body{
     width: 884px;
 }
 
-/* Responsive*/
+/* Projetos */
+
+.projeto, .projeto-conteudo{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projeto h3{
+    color: black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#foto-projeto{
+    width: 80px;
+}
+
+.projeto-conteudo{
+    cursor: pointer;
+}
+
+/* Responsividade conteudo*/
+
+@media (max-width: 900px)
+{
+  .conteudo, .conteudo2, .conteudo3, .conteudo4, .conteudo5
+  {
+   
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .text-post-space .horizontal-icons
+  {
+    justify-items: left;
+    /*
+    flex-direction: column;
+    flex-wrap: wrap;*/
+}
+
+.about-me-post
+{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.post, .projeto-conteudo
+{
+  width: 80%;
+}
+
+.horizontal-icons a img
+{
+  width: 70%!important; 
+}
+
+video{
+    width: 426px;
+}
+
+.close-button {
+    float: right;
+    left: 85%;
+    top: 16%;
+
+}
+}
+
+/*
+
+
 
 @media (min-width: 1000px) and (max-width: 1200px){
     .horizontal-icon{
@@ -530,7 +537,6 @@ body{
     .more{
         margin-top: 153px;
         width: 160px;
-        /* display: inline; */
         margin-left: 93px;
 
     }
@@ -562,7 +568,6 @@ body{
     .more{
         margin-top: 153px;
         width: 160px;
-        /* display: inline; */
         margin-left: 93px;
 
     }
@@ -607,7 +612,6 @@ body{
     .more{
         margin-top: 224px;
         width: 160px;
-        /* display: inline; */
         margin-left: 48px;
 
     }
@@ -700,3 +704,5 @@ body{
         padding: 0px;
     }
 }
+
+*/
