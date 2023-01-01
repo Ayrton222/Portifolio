@@ -109,14 +109,15 @@ body{
     {
       width: 1.7rem;
       margin: .5rem;
-      /*margin-left: 1.25rem;
-      margin-right: 12em;*/
+      margin-left: 1.25rem;
+      margin-right: 12em;
     }
   
     .navbar
     {
       flex-direction: column;
       align-items: flex-start;
+      width: 105%;
     }
   
     .botaomenu
@@ -445,7 +446,15 @@ body{
     .text-post h3{
         margin-top: 0;
     }
+
+    .quem-sou{
+        margin-left: -28px;
+    }
     
+    .responsive-foto-post{
+        margin-top: 30px;
+
+    }
     .more{
         margin-top: 260px;
         font-size: 11px;
@@ -482,7 +491,7 @@ body{
 
     .text-post li {
         padding: 3px;
-        font-size: 13px;
+        font-size: 11px;
         font-family: "Comic Sans MS", "Comic Sans", cursive;
         cursor: pointer;
     }
